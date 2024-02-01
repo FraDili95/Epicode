@@ -1,0 +1,159 @@
+body{
+    /*IMPOST GENERALI*/
+    background-color: rgb(24, 23, 23);
+/*USO IL MARGINE PER CENTRARMI LA CARD*/
+    margin: 5% 35%;
+    padding-bottom: 10%;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+/* Nasconde eventuali parti dell'immagine 
+che superano le dimensioni del contenitore */
+    overflow: hidden;
+    width: auto; /*centrato */
+    height: 600px; /*altezza desiderata del contenitore */
+    border-radius: 25px;/*stondo*/
+    position: relative;/*mi serve per posizionare il resto*/
+    border: solid 5px black;
+}
+/*----------------------------------------*/
+/*IMMAGINE*/
+main img
+{
+/* Imposta la larghezza
+ dell'immagine al 100% 
+ del contenitore */    
+     width: 100%; 
+ /* Imposta l'altezza 
+ dell'immagine in base 
+ alla sua proporzione */ 
+     height: 100%;
+}
+/*----------------------------------------*/
+/*parte relativa alla tendina condivisione social*/
+/*CONTIENE TUTTE LE ICONE*/
+#conteiner{
+    font-size: 20px;
+    padding: 4px;
+    border-radius: 40%;
+    position: relative;
+    border: #000000 solid 2px;
+    top: -95%;/*Da chidere a simone o daniele*/
+    left: 1rem;
+    width: auto;
+    cursor: pointer;
+}
+/*specifiche per gli elementi nascosti*/
+.social{
+    margin: 0;
+    position: absolute;
+    left: -8rem;
+  }
+/*mi ingrandisce il font di tutti al puntamento*/
+button:hover i {
+    font-size: 30px;
+  }
+/*me li fa comparire e li distanzia al puntamento*/
+button:hover .social{
+    padding-top: 15px; 
+    left: 0;
+}
+/*FINE "CONDIVIDI"
+/*----------------------------------------*/
+/*INIZIO "DOWNLOAD"*/
+.save{/*contenitore generale*/
+      position: absolute;
+      right: 1rem;
+      top: -3rem;
+      border: #000000 solid 5px;
+      padding: 7px 14px 7px 7px;
+      border-radius: 45%;
+      text-decoration: none;
+      font-weight: 200;
+      font-family: fantasy;
+      color: #000000;
+      background-color: red;
+      transition: top 0.3s ease-in;
+}
+/*inglobo in un cerchio l'icona*/
+.save i{
+    border: #000000 solid 3px;
+    border-radius: 45%;
+}
+/*pseudoclasse di transizione posizione */
+main:hover .save{
+    top: 1rem;   
+}
+/*FINE "DOWNLOAD"*/
+/*----------------------------------------*/
+/*INIZIO "TASTO PLAY"*/
+/*posizione nascosta + sec transiz
+  + dimensioni e colore*/
+.play
+{
+     position: absolute;
+     bottom: 4rem;
+     left: -6rem;
+     border: solid 5px black;
+     border-radius: 50%;
+     height: 4.5rem;
+     width: 4.5rem;
+     background-color: red;
+     transition: left 0.3s ease-in;
+}
+/*creazione triangolo del play*/
+.play div
+{
+    margin: auto;
+    position: relative;
+    top: 40%;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 11px 19.1px 11px;/*specifiche da sito*/
+    border-color: transparent transparent #000000 transparent;
+    transform: rotate(90deg);
+}
+/*pseudoclasse di transizione posizione */
+main:hover .play{
+    left: 1rem;
+}
+/*FINE "TASTO PLAY"*/
+/*----------------------------------------*/
+/*INIZIO PARTE INFORMAZ*/
+.Autor_album{/*contiene autore e album*/
+    border-radius: 10%;
+    position: absolute;
+    bottom: 5rem;
+    left: 40%;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;   
+}
+.sub{/*specifiche particolari album*/
+    left: 39%;
+    color:  rgb(207, 189, 189);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+/*contiene titolo canzone*/
+.title{
+    position: absolute;
+    color: rgb(207, 189, 189);
+    bottom: 2rem;
+    left: 2rem;
+    font-weight: 600;
+    font-size: 2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 390px;
+}
+
+
+
+
+

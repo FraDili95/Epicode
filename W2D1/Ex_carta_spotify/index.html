@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!------------------------------->
+     <!--AUMENTA LA RESPONSIVITA' SU BROWSER-->
+    <link rel="stylesheet" href="normalize.css">
+     <!------------------------------->
+    <link rel="stylesheet" href="style.css">
+    <title>Esercizio_pinterest</title>
+</head>
+
+<body>
+
+   
+    <main >
+        <!--IMMAGINE-->
+        <img src="assets/copertina.jpeg" alt="Copertina_Helvisback">
+        <!------------------------------->
+ <!--HO USATO BUTTON PERCHE' SPERAVO DI PORLO INNESCARE AL CLICK-->       
+        <button id="conteiner">
+        <!--ELEMENTO SEMPRE VISIBILE CHE INNESCA LA COMPARSA DEGLI ALTRI-->
+            <i  class="fa-solid fa-share-nodes"></i>
+            <!--CONTIENE QUELLI NASCOSTI-->
+            <div class="social">
+                 <i  class="fa-brands fa-square-instagram"></i>
+                 <i  class="fa-brands fa-facebook"></i>
+                 <i  class="fa-brands fa-square-whatsapp"></i>
+                 <i  class="fa-brands fa-discord"></i>
+            </div>  
+        </button>
+       <!--FINE ELEMENTI "CONDIVIDI"-->
+       <!------------------------------->
+       <!--INIZIO BOTTONE DOWNLOAD--> 
+        <a  class="save" href=""><!--USO A COSI è CLICCABILE-->
+            <i class="fa-solid fa-arrow-down"></i> 
+            Download
+        </a><!--FINE "DOWNLOAD"-->
+        <!------------------------------->
+       <!--INIZIO BOTTONE "PLAY"-->
+       <a class="play" href=""><!--metto un link solo per fare un elemento cliccabile-->
+          <div>
+            <!--MI SERVE SOLO DA CONTENITORE VUOTO-->
+          </div>
+       </a>
+       <!--FINE "PLAY"-->
+       <!------------------------------->
+        <!--INIZIO PARTE SCRITTA IN BASSO-->
+        <!--ALBUM + AUTORE-->
+       <div class="Autor_album">
+           <div>SALMO</div>
+           <div class="sub">Helvisback</div>
+       </div>
+        <!------->
+         <!--TITOLO CANZONE-->
+       <div class="title">
+            Bentley vs Cadillac (Travis Barker)
+       </div>
+         <!--FINE PARTE SCRITTA IN BASSO-->
+         <!------------------------------->
+    </main>
+</body>
+
+<script src="https://kit.fontawesome.com/e69d63c322.js" crossorigin="anonymous"></script>
+</html>
